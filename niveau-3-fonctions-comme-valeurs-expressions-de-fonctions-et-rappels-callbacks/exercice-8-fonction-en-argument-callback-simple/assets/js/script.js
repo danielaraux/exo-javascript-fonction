@@ -1,7 +1,8 @@
-// executerOperation et operation sont des fonctions utiles si on veut faire plusieurs opérations sans avoir a faire beaucoup de code en retappant les operations. ca permet une meilleure ergonomie du code.
+// executerOperation et operation sont des fonctions utiles si on veut faire plusieurs opérations sans avoir à faire beaucoup de code en retappant les operations. ca permet une meilleure ergonomie du code.
 
 function executerOperation(nombre1, nombre2, operation) {
-    return operation(nombre1, nombre2)
+    operation = operation(nombre1, nombre2)
+    return operation
 }
 
 // Les fonctions vont additioner ou soustraire les nombres qu'on précisera dans le console.log

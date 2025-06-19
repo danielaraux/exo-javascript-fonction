@@ -1,3 +1,5 @@
+<!-- /* Réutilisation et modification du code de la calculatrice fait dans l'exercice grid */ -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,28 +7,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <h1>Niveau : </h1>
+    <!-- <h1>Niveau : Projets Mini-Fonctionnels </h1>
     <hr>
-    <h2>Exercice N°</h2>
+    <h2>Projet 2 : Calculatrice Basique (Fonctions pour chaque opération)</h2>
     <hr>
 
 
     <h4>Consigne : </h4>
 
-    <p></p>
+    <p>1. Écrivez quatre fonctions :
+        add(a, b)
+        ,
+        subtract(a, b)
+        ,
+        multiply(a, b)
+        ,
+        divide(a, b)
+        .</p>
 
-    <p></p>
+    <p>2. Créez une fonction principale
+        calculer(operation, num1, num2)
+        qui prend l'opération souhaitée (sous forme de chaîne, ex: "add") et les deux nombres.</p>
 
-    <p></p>
+    <p>3. À l'intérieur de
+        calculer
+        , utilisez une structure conditionnelle (
+        if/else if
+        ou
+        switch
+        ) pour appeler la bonne fonction d'opération et retourner le résultat.</p>
+
+    <p>4. Gérez le cas de la division par zéro.</p> -->
+
+
+
+    <main>
+
+        <h1>Calculatrice de Daniel</h1>
+
+        <!-- Création d'une div pour centrer la calculatrice en hauteur et largeur -->
+        <div class="centrage-calculette">
+
+            <!-- Création d'une div pour faire le contour de la calculatrice -->
+            <div class="calculette">
+
+
+
+                <div class="bordPartiehaute">
+
+                    <!-- Création d'une div pour gérer la partie haute au niveau remplissage et contours -->
+                    <div class="partie-haute">
+
+                        <!-- Création d'une div pour gérer la ligne avec le texte et le panneau solaire -->
+                        <div class="ligne-casio">
+                            <div class="casio">CASIO</div>
+                            <div class="solaire"></div>
+                            <div class="modele">MS-80E</div>
+                        </div>
+
+                        <!-- Création d'une div pour gérer le cadran -->
+                        <div class="cadran">
+
+                            <!-- Création d'une div pour gérer le texte sur le haut du cadran -->
+                            <div class="ligne-type">
+                                <div class="ligne-type-1">
+                                    <div class="">-</div>
+                                    <div class="">M</div>
+                                    <div class="">K</div>
+                                </div>
+                                <div class="euro">Euro</div>
+                                <div class="symbole">÷</div>
+                            </div>
+
+                            <!-- Création d'une div pour mettre les chiffres -->
+                            <div class="chiffres">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bordPartiebasse">
+
+                    <!-- Création d'une div pour gérer la partie basse au niveau remplissage et contours -->
+                    <div class="partie-basse">
+
+                        <!-- Création d'une div pour mettre en place le texte au dessus des boutons -->
+                        <div class="bouton-type">
+                            <div class="set">SET</div>
+                            <div class="rate">RATE</div>
+                        </div>
+
+                        <!-- Création de la div pour la grille et la mise en place des boutons en leur ajoutant des class et ID pour le bouton plus (+) -->
+                        <div class="grille">
+                            <button class="button-blue bouton">OFF</button>
+                            <button class="button-blue bouton">+/-</button>
+                            <button class="button-blue bouton">%</button>
+                            <button class="button-grey bouton">Local</button>
+                            <button class="button-grey bouton">Euro</button>
+                            <button class="button-blue bouton">MC</button>
+                            <button class="button-blue bouton">MR</button>
+                            <button class="button-blue bouton">M-</button>
+                            <button class="button-blue bouton">M+</button>
+                            <button class="button-blue bouton">÷</button>
+                            <button class="button-blue bouton">►</button>
+                            <button class="button-black bouton">7</button>
+                            <button class="button-black bouton">8</button>
+                            <button class="button-black bouton">9</button>
+                            <button class="button-black bouton">x</button>
+                            <button class="button-orange bouton">C</button>
+                            <button class="button-black bouton">4</button>
+                            <button class="button-black bouton">5</button>
+                            <button class="button-black bouton">6</button>
+                            <button class="button-blue bouton">-</button>
+                            <button class="button-orange bouton">AC</button>
+                            <button class="button-black bouton">1</button>
+                            <button class="button-black bouton">2</button>
+                            <button class="button-black bouton">3</button>
+                            <button class="button-blue bouton" id="boutonplus">+</button>
+                            <button class="button-black bouton">0</button>
+                            <button class="button-black bouton">00</button>
+                            <button class="button-black bouton">•</button>
+                            <button class="button-blue bouton">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
