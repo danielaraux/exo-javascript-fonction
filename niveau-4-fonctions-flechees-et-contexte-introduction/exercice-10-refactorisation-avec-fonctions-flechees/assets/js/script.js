@@ -5,9 +5,7 @@
 // On affiche la phrase bonjour avec l'argument nom.
 // On appelle notre fonction saluerNom en précisant pour chaque appel, un prénom.
 
-let saluerNom = (nom) => {
-    console.log(`Bonjour, ${nom} !`)
-}
+let saluerNom = (nom) => console.log(`Bonjour, ${nom} !`)
 
 saluerNom("Alice");
 saluerNom("Henri");
