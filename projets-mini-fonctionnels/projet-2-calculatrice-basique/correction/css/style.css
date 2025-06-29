@@ -1,0 +1,11 @@
+/* Correction de William */
+
+button {
+    color: white;
+    background-color:orange
+}
+
+button:hover {
+    color: orange;
+    background-color: white;
+}
